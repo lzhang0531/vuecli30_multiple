@@ -9,12 +9,11 @@ vue项目基础框架搭建
   "js-cookie",
   "less",
   "less-loader",
-  "vue-lazyload",
   "vue-router",
   "vuex"
 
 # 解决问题
-极致优化：1.路由按需加载，2.图片懒加载，3.CDN大幅优化首屏加载速度
+框架优化：1.路由按需加载，2.图片懒加载，3.CDN大幅优化首屏加载速度
 
 # 安装dependencies
 cnpm install
