@@ -34,6 +34,7 @@ module.exports = {
       vue: "Vue",
       iview: "iView",
       "vue-router": "VueRouter",
+      axio: "axios",
       vuex: "Vuex"
     }
   }

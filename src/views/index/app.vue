@@ -14,9 +14,11 @@ export default {
     btn() {
       location.assign("../more.html");
     }
+  },
+  mounted(){
+    console.log(this.$http);
   }
-};
-</script>
+};</script>
 
 <style lang="less">
 </style>
