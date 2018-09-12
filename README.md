@@ -2,7 +2,7 @@
 vue项目基础框架搭建
 
 ``` bash
-采用最新vue-cli3.0模板，自定义优化，框架集成
+采用最新vue-cli3.0模板，自定义优化，多页面配置，框架集成
   "axios",
   "iview",
   "js-cookie",
