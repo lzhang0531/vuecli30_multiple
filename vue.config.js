@@ -16,17 +16,21 @@ glob.sync("./src/views/**/app.js").forEach(path => {
 //正式配置
 module.exports = {
   pages,
-  lintOnSave: false,
+  lintOnSave: "error",
   chainWebpack: config => config.plugins.delete("named-chunks"),
-  // devServer: {
-  //   proxy: {
-  //     "/api": {
-  //       target: "http://127.0.0.1:8080",
-  //       changeOrigin: true,
-  //       pathRewrite: { "^/api": "" }
-  //     }
-  //   }
-  // },
+  devServer: {
+    overlay: {
+      warnings: true,
+      errors: true
+    }
+    // proxy: {
+    //   "/api": {
+    //     target: "http://127.0.0.1:8080",
+    //     changeOrigin: true,
+    //     pathRewrite: { "^/api": "" }
+    //   }
+    // }
+  },
   configureWebpack: {
     externals: {
       //格式为 'aaa' : 'bbb', 其中，aaa表示要引入的资源的名字，bbb表示该模块提供给外部引用的名字，

@@ -4,8 +4,8 @@ const app = {
   },
   mutations: {
     setList(state, data) {
-      state.list = state.list.concat(data)
+      state.list = state.list.concat(data);
     }
   }
-}
-export default app
+};
+export default app;
