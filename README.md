@@ -14,6 +14,8 @@ vue项目基础框架搭建
 # 解决问题
 框架优化：1.路由按需加载，2.图片懒加载，3.CDN大幅优化首屏加载速度
 
+webpack配置：打包自动清除console.log与debugger信息
+
 # 安装dependencies
 cnpm install
 
