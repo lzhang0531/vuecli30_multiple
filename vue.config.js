@@ -10,6 +10,7 @@ glob.sync("./src/views/**/app.js").forEach(path => {
     entry: path,
     template: "public/index.html",
     // title: titles[chunk],
+    title: "官网",
     chunks: ["chunk-vendors", "chunk-common", chunk]
   };
 });
