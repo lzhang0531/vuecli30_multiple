@@ -44,8 +44,7 @@ module.exports = {
               drop_debugger: true,
               drop_console: true
             }
-          },
-          sourceMap: true
+          }
         })
       ]
     };
