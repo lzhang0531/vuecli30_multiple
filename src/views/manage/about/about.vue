@@ -11,19 +11,19 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       modal1: false
-    };
+    }
   },
   methods: {
-    ok() {
-      console.log("btn_console");
-      this.$Message.info("Clicked ok");
+    ok () {
+      console.log('btn_console')
+      this.$Message.info('Clicked ok')
     },
-    cancel() {
-      this.$Message.info("Clicked cancel");
+    cancel () {
+      this.$Message.info('Clicked cancel')
     }
   }
-};
+}
 </script>

@@ -1,15 +1,34 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+    <div id="app">
+        <div class="content">
+            <keep-alive :exclude="exclude">
+                <router-view></router-view>
+            </keep-alive>
+        </div>
+        <TheHeader/>
+    </div>
 </template>
+
 <script>
+import TheHeader from 'index/components/TheHeader'
+
 export default {
-  data() {
-    return {};
+  name: 'App',
+  components: {
+    TheHeader
+  },
+  data () {
+    return {
+      exclude: ['User']
+    }
   }
-};
+}
 </script>
 
-<style lang="less">
+<style lang="stylus" scoped>
+    .content
+        position absolute
+        botton 56px
+        top 0
+        width 100%
 </style>

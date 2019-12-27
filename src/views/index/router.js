@@ -1,20 +1,20 @@
-import VueRouter from "vue-router";
+import VueRouter from 'vue-router'
 export default new VueRouter({
-  // mode: "history",//该模式会在服务器上刷新变404,还需后端设置
+  // mode: "history",
   base: process.env.BASE_URL,
   routes: [
     {
-      path: "/",
-      name: "home",
-      component: () => import(/* webpackChunkName: "home" */ "./Home/Home.vue")
+      path: '/',
+      redirect: '/list/1'
     },
     {
-      path: "*",
-      name: "error_404",
-      meta: {
-        hideInMenu: true
-      },
-      component: () => import("@/components/error-page/404.vue")
+      path: '/list/:type',
+      name: 'list',
+      component: () => import('./pages/List.vue') },
+    {
+      path: '/user',
+      name: 'user',
+      component: () => import('./pages/User.vue')
     }
   ]
-});
+})
